@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html>
 <head>
@@ -10,13 +11,17 @@
 	<link rel="stylesheet" href="/assets/fabricator/styles/f.css">
 
 
-	<!-- toolkit styles -->
+	<!-- lantern styles -->
 	<link rel="stylesheet" href="/assets/toolkit/styles/lantern-styles.css">
-	<!-- /toolkit styles -->
+	<!-- /lantern styles -->
     
     <!-- demo styles -->
     <link rel="stylesheet" href="/assets/toolkit/styles/demo-styles.css">
     <!-- /demo styles -->
+    
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <!-- /jquery -->
 
 </head>
 <body>
@@ -77,10 +82,15 @@
 							<a href="CFER.html#02-buttons">Buttons</a>
 						</li>
 						<li>
-							<a href="CFER.html#03-icons">Icons</a>
+							<a href="CFER.html#03-svg">Svg</a>
 						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="icons.html" class="f-menu__heading">Icons</a>
+					<ul>
 						<li>
-							<a href="CFER.html#04-svg">Svg</a>
+							<a href="icons.html#material">Material</a>
 						</li>
 					</ul>
 				</li>
@@ -88,13 +98,13 @@
 					<a href="lantern.html" class="f-menu__heading">Lantern</a>
 					<ul>
 						<li>
-							<a href="lantern.html#01-typography">Typography</a>
+							<a href="lantern.html#01-buttons">Buttons</a>
 						</li>
 						<li>
-							<a href="lantern.html#ok-button">Ok Button</a>
+							<a href="lantern.html#02-stimulus">Stimulus</a>
 						</li>
 						<li>
-							<a href="lantern.html#sound-button">Sound Button</a>
+							<a href="lantern.html#05-header">Header</a>
 						</li>
 					</ul>
 				</li>
@@ -107,10 +117,10 @@
 					</ul>
 				</li>
 				<li>
-					<a href="structures.html" class="f-menu__heading">Structures</a>
+					<a href="work-in-progress.html" class="f-menu__heading">Work In Progress</a>
 					<ul>
 						<li>
-							<a href="structures.html#form">Form</a>
+							<a href="work-in-progress.html#speaker-whole">Speaker Whole</a>
 						</li>
 					</ul>
 				</li>
@@ -119,10 +129,13 @@
 					<a href="pages.html" class="f-menu__heading">Pages</a>
 					<ul>
 						<li>
-							<a href="pages/home.html">Home</a>
+							<a href="pages/avatar-experiment.html" target="_blank">Avatar Experiment</a>
 						</li>
 						<li>
-							<a href="pages/svg.html">Svg</a>
+							<a href="pages/flm-lightning.html" target="_blank">Flm Lightning</a>
+						</li>
+						<li>
+							<a href="pages/flm-sounds.html" target="_blank">Flm Sounds</a>
 						</li>
 					</ul>
 				</li>
@@ -131,7 +144,7 @@
 					<a href="docs.html" class="f-menu__heading">Docs</a>
 					<ul>
 						<li>
-							<a href="docs.html#javascript">Javascript</a>
+							<a href="docs.html#placeholder">Placeholder</a>
 						</li>
 					</ul>
 				</li>
@@ -155,57 +168,543 @@
 <h1 data-f-toggle="labels">Lantern Elements</h1>
 
 
-<div class="f-item-group" id="01-typography">
+<div class="f-item-group" id="01-buttons">
 
-	<div class="f-item-heading-group" data-f-toggle="labels">
-		<h2 class="f-item-heading">Typography</h2>
-		<div class="f-item-controls">
-			
-			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-				<svg>
-					<use xlink:href="#f-icon-code" />
-				</svg>
-			</span>
-		</div>
+	<div class="f-item-heading-group">
+		<h2 class="f-item-heading" data-f-toggle="labels">Buttons</h2>
 	</div>
+		<div class="f-item-group" id="01-buttons.01-speaker">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Speaker</h3>
+				<div class="f-item-controls">
+					
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div>
 <div class="f-item-preview">
-	<h1>Heading One (H1)</h1>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas accumsan interdum sem in dapibus. Praesent pellentesque lorem turpis, vel porttitor enim elementum sit amet. Praesent tristique tempus condimentum.</p>
-<h2>Heading Two (H2)</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas accumsan interdum sem in dapibus. Praesent pellentesque lorem turpis, vel porttitor enim elementum sit amet. Praesent tristique tempus condimentum.</p>
-<h3>Heading Three (H3)</h3>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas accumsan interdum sem in dapibus. Praesent pellentesque lorem turpis, vel porttitor enim elementum sit amet. Praesent tristique tempus condimentum.</p>
-<h4>Heading Four (H4)</h4>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas accumsan interdum sem in dapibus. Praesent pellentesque lorem turpis, vel porttitor enim elementum sit amet. Praesent tristique tempus condimentum.</p>
+	<div class="speaker-animation">
+	<svg>
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-speaker-01"></use>
+    </svg>
+	<svg>
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-speaker-02"></use>
+    </svg>
+	<svg>
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-speaker-03"></use>
+    </svg>
+	<svg>
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-speaker-04"></use>
+    </svg>
+</div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;h1&gt;Heading One (H1)&lt;/h1&gt;
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas accumsan interdum sem in dapibus. Praesent pellentesque lorem turpis, vel porttitor enim elementum sit amet. Praesent tristique tempus condimentum.&lt;/p&gt;
-&lt;h2&gt;Heading Two (H2)&lt;/h2&gt;
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas accumsan interdum sem in dapibus. Praesent pellentesque lorem turpis, vel porttitor enim elementum sit amet. Praesent tristique tempus condimentum.&lt;/p&gt;
-&lt;h3&gt;Heading Three (H3)&lt;/h3&gt;
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas accumsan interdum sem in dapibus. Praesent pellentesque lorem turpis, vel porttitor enim elementum sit amet. Praesent tristique tempus condimentum.&lt;/p&gt;
-&lt;h4&gt;Heading Four (H4)&lt;/h4&gt;
-&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas accumsan interdum sem in dapibus. Praesent pellentesque lorem turpis, vel porttitor enim elementum sit amet. Praesent tristique tempus condimentum.&lt;/p&gt;</code></pre>
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;speaker-animation&quot;&gt;
+	&lt;svg&gt;
+        &lt;use xmlns:xlink&#x3D;&quot;http://www.w3.org/1999/xlink&quot; xlink:href&#x3D;&quot;#svg-speaker-01&quot;&gt;&lt;/use&gt;
+    &lt;/svg&gt;
+	&lt;svg&gt;
+        &lt;use xmlns:xlink&#x3D;&quot;http://www.w3.org/1999/xlink&quot; xlink:href&#x3D;&quot;#svg-speaker-02&quot;&gt;&lt;/use&gt;
+    &lt;/svg&gt;
+	&lt;svg&gt;
+        &lt;use xmlns:xlink&#x3D;&quot;http://www.w3.org/1999/xlink&quot; xlink:href&#x3D;&quot;#svg-speaker-03&quot;&gt;&lt;/use&gt;
+    &lt;/svg&gt;
+	&lt;svg&gt;
+        &lt;use xmlns:xlink&#x3D;&quot;http://www.w3.org/1999/xlink&quot; xlink:href&#x3D;&quot;#svg-speaker-04&quot;&gt;&lt;/use&gt;
+    &lt;/svg&gt;
+&lt;/div&gt;</code></pre>
 </div>
 
-
+		</div>
+		<div class="f-item-group" id="01-buttons.02-speaker-demo">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Speaker Demo</h3>
+				<div class="f-item-controls">
+					
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div>
+<div class="f-item-preview">
+	<div class="speaker-animation" id="demo-speaker-1">
+	<svg>
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-speaker-01"></use>
+    </svg>
+	<svg>
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-speaker-02"></use>
+    </svg>
+	<svg>
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-speaker-03"></use>
+    </svg>
+	<svg>
+        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-speaker-04"></use>
+    </svg>
 </div>
 
+<button id="demo-speaker-1" style="margin-top:20px;">toggle 'active' class</button>
 
-<div class="f-item-group" id="ok-button">
+<script>
+	$(document).ready(function() {
+		$('button#demo-speaker-1').click(function() {
+			$('div#demo-speaker-1').toggleClass('active');
+		})
+	});
+</script>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;speaker-animation&quot; id&#x3D;&quot;demo-speaker-1&quot;&gt;
+	&lt;svg&gt;
+        &lt;use xmlns:xlink&#x3D;&quot;http://www.w3.org/1999/xlink&quot; xlink:href&#x3D;&quot;#svg-speaker-01&quot;&gt;&lt;/use&gt;
+    &lt;/svg&gt;
+	&lt;svg&gt;
+        &lt;use xmlns:xlink&#x3D;&quot;http://www.w3.org/1999/xlink&quot; xlink:href&#x3D;&quot;#svg-speaker-02&quot;&gt;&lt;/use&gt;
+    &lt;/svg&gt;
+	&lt;svg&gt;
+        &lt;use xmlns:xlink&#x3D;&quot;http://www.w3.org/1999/xlink&quot; xlink:href&#x3D;&quot;#svg-speaker-03&quot;&gt;&lt;/use&gt;
+    &lt;/svg&gt;
+	&lt;svg&gt;
+        &lt;use xmlns:xlink&#x3D;&quot;http://www.w3.org/1999/xlink&quot; xlink:href&#x3D;&quot;#svg-speaker-04&quot;&gt;&lt;/use&gt;
+    &lt;/svg&gt;
+&lt;/div&gt;
 
-	<div class="f-item-heading-group" data-f-toggle="labels">
-		<h2 class="f-item-heading">Ok Button</h2>
-		<div class="f-item-controls">
-			
-			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+&lt;button id&#x3D;&quot;demo-speaker-1&quot; style&#x3D;&quot;margin-top:20px;&quot;&gt;toggle &#x27;active&#x27; class&lt;/button&gt;
+
+&lt;script&gt;
+	$(document).ready(function() {
+		$(&#x27;button#demo-speaker-1&#x27;).click(function() {
+			$(&#x27;div#demo-speaker-1&#x27;).toggleClass(&#x27;active&#x27;);
+		})
+	});
+&lt;/script&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="01-buttons.03-sound-buttons">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Sound Buttons</h3>
+				<div class="f-item-controls">
+					
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div>
+<div class="f-item-preview">
+	<div class="vertical-answer-buttons">
+	<div class="sound-button">
+		<div class="sound-button-play">
+			<svg>
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-sound-button-play"></use>
+            </svg>
+			<div class="speaker-animation">
 				<svg>
-					<use xlink:href="#f-icon-code" />
-				</svg>
-			</span>
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-speaker-01"></use>
+                </svg>
+				<svg>
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-speaker-02"></use>
+                </svg>
+				<svg>
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-speaker-03"></use>
+                </svg>
+				<svg>
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-speaker-04"></use>
+                </svg>
+			</div>
+		</div>
+		<div class="sound-button-select">
+			<svg>
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-sound-button-select"></use>
+            </svg>
+			<svg>
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-check"></use>
+            </svg>
 		</div>
 	</div>
+	<div class="sound-button">
+		<div class="sound-button-play">
+			<svg>
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-sound-button-play"></use>
+            </svg>
+			<div class="speaker-animation">
+				<svg>
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-speaker-01"></use>
+                </svg>
+				<svg>
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-speaker-02"></use>
+                </svg>
+				<svg>
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-speaker-03"></use>
+                </svg>
+				<svg>
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-speaker-04"></use>
+                </svg>
+			</div>
+		</div>
+		<div class="sound-button-select">
+			<svg>
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-sound-button-select"></use>
+            </svg>
+			<svg>
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-check"></use>
+            </svg>
+		</div>
+	</div>
+	<div class="sound-button">
+		<div class="sound-button-play">
+			<svg>
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-sound-button-play"></use>
+            </svg>
+			<div class="speaker-animation">
+				<svg>
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-speaker-01"></use>
+                </svg>
+				<svg>
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-speaker-02"></use>
+                </svg>
+				<svg>
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-speaker-03"></use>
+                </svg>
+				<svg>
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-speaker-04"></use>
+                </svg>
+			</div>
+		</div>
+		<div class="sound-button-select">
+			<svg>
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-sound-button-select"></use>
+            </svg>
+			<svg>
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-check"></use>
+            </svg>
+		</div>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;vertical-answer-buttons&quot;&gt;
+	&lt;div class&#x3D;&quot;sound-button&quot;&gt;
+		&lt;div class&#x3D;&quot;sound-button-play&quot;&gt;
+			&lt;svg&gt;
+                &lt;use xmlns:xlink&#x3D;&quot;http://www.w3.org/1999/xlink&quot; xlink:href&#x3D;&quot;#svg-sound-button-play&quot;&gt;&lt;/use&gt;
+            &lt;/svg&gt;
+			&lt;div class&#x3D;&quot;speaker-animation&quot;&gt;
+				&lt;svg&gt;
+                    &lt;use xmlns:xlink&#x3D;&quot;http://www.w3.org/1999/xlink&quot; xlink:href&#x3D;&quot;#svg-speaker-01&quot;&gt;&lt;/use&gt;
+                &lt;/svg&gt;
+				&lt;svg&gt;
+                    &lt;use xmlns:xlink&#x3D;&quot;http://www.w3.org/1999/xlink&quot; xlink:href&#x3D;&quot;#svg-speaker-02&quot;&gt;&lt;/use&gt;
+                &lt;/svg&gt;
+				&lt;svg&gt;
+                    &lt;use xmlns:xlink&#x3D;&quot;http://www.w3.org/1999/xlink&quot; xlink:href&#x3D;&quot;#svg-speaker-03&quot;&gt;&lt;/use&gt;
+                &lt;/svg&gt;
+				&lt;svg&gt;
+                    &lt;use xmlns:xlink&#x3D;&quot;http://www.w3.org/1999/xlink&quot; xlink:href&#x3D;&quot;#svg-speaker-04&quot;&gt;&lt;/use&gt;
+                &lt;/svg&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class&#x3D;&quot;sound-button-select&quot;&gt;
+			&lt;svg&gt;
+                &lt;use xmlns:xlink&#x3D;&quot;http://www.w3.org/1999/xlink&quot; xlink:href&#x3D;&quot;#svg-sound-button-select&quot;&gt;&lt;/use&gt;
+            &lt;/svg&gt;
+			&lt;svg&gt;
+                &lt;use xmlns:xlink&#x3D;&quot;http://www.w3.org/1999/xlink&quot; xlink:href&#x3D;&quot;#svg-check&quot;&gt;&lt;/use&gt;
+            &lt;/svg&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;sound-button&quot;&gt;
+		&lt;div class&#x3D;&quot;sound-button-play&quot;&gt;
+			&lt;svg&gt;
+                &lt;use xmlns:xlink&#x3D;&quot;http://www.w3.org/1999/xlink&quot; xlink:href&#x3D;&quot;#svg-sound-button-play&quot;&gt;&lt;/use&gt;
+            &lt;/svg&gt;
+			&lt;div class&#x3D;&quot;speaker-animation&quot;&gt;
+				&lt;svg&gt;
+                    &lt;use xmlns:xlink&#x3D;&quot;http://www.w3.org/1999/xlink&quot; xlink:href&#x3D;&quot;#svg-speaker-01&quot;&gt;&lt;/use&gt;
+                &lt;/svg&gt;
+				&lt;svg&gt;
+                    &lt;use xmlns:xlink&#x3D;&quot;http://www.w3.org/1999/xlink&quot; xlink:href&#x3D;&quot;#svg-speaker-02&quot;&gt;&lt;/use&gt;
+                &lt;/svg&gt;
+				&lt;svg&gt;
+                    &lt;use xmlns:xlink&#x3D;&quot;http://www.w3.org/1999/xlink&quot; xlink:href&#x3D;&quot;#svg-speaker-03&quot;&gt;&lt;/use&gt;
+                &lt;/svg&gt;
+				&lt;svg&gt;
+                    &lt;use xmlns:xlink&#x3D;&quot;http://www.w3.org/1999/xlink&quot; xlink:href&#x3D;&quot;#svg-speaker-04&quot;&gt;&lt;/use&gt;
+                &lt;/svg&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class&#x3D;&quot;sound-button-select&quot;&gt;
+			&lt;svg&gt;
+                &lt;use xmlns:xlink&#x3D;&quot;http://www.w3.org/1999/xlink&quot; xlink:href&#x3D;&quot;#svg-sound-button-select&quot;&gt;&lt;/use&gt;
+            &lt;/svg&gt;
+			&lt;svg&gt;
+                &lt;use xmlns:xlink&#x3D;&quot;http://www.w3.org/1999/xlink&quot; xlink:href&#x3D;&quot;#svg-check&quot;&gt;&lt;/use&gt;
+            &lt;/svg&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;sound-button&quot;&gt;
+		&lt;div class&#x3D;&quot;sound-button-play&quot;&gt;
+			&lt;svg&gt;
+                &lt;use xmlns:xlink&#x3D;&quot;http://www.w3.org/1999/xlink&quot; xlink:href&#x3D;&quot;#svg-sound-button-play&quot;&gt;&lt;/use&gt;
+            &lt;/svg&gt;
+			&lt;div class&#x3D;&quot;speaker-animation&quot;&gt;
+				&lt;svg&gt;
+                    &lt;use xmlns:xlink&#x3D;&quot;http://www.w3.org/1999/xlink&quot; xlink:href&#x3D;&quot;#svg-speaker-01&quot;&gt;&lt;/use&gt;
+                &lt;/svg&gt;
+				&lt;svg&gt;
+                    &lt;use xmlns:xlink&#x3D;&quot;http://www.w3.org/1999/xlink&quot; xlink:href&#x3D;&quot;#svg-speaker-02&quot;&gt;&lt;/use&gt;
+                &lt;/svg&gt;
+				&lt;svg&gt;
+                    &lt;use xmlns:xlink&#x3D;&quot;http://www.w3.org/1999/xlink&quot; xlink:href&#x3D;&quot;#svg-speaker-03&quot;&gt;&lt;/use&gt;
+                &lt;/svg&gt;
+				&lt;svg&gt;
+                    &lt;use xmlns:xlink&#x3D;&quot;http://www.w3.org/1999/xlink&quot; xlink:href&#x3D;&quot;#svg-speaker-04&quot;&gt;&lt;/use&gt;
+                &lt;/svg&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class&#x3D;&quot;sound-button-select&quot;&gt;
+			&lt;svg&gt;
+                &lt;use xmlns:xlink&#x3D;&quot;http://www.w3.org/1999/xlink&quot; xlink:href&#x3D;&quot;#svg-sound-button-select&quot;&gt;&lt;/use&gt;
+            &lt;/svg&gt;
+			&lt;svg&gt;
+                &lt;use xmlns:xlink&#x3D;&quot;http://www.w3.org/1999/xlink&quot; xlink:href&#x3D;&quot;#svg-check&quot;&gt;&lt;/use&gt;
+            &lt;/svg&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="01-buttons.04-thumb-buttons">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Thumb Buttons</h3>
+				<div class="f-item-controls">
+					
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div>
+<div class="f-item-preview">
+	<div class="horizontal-answer-buttons">
+	<div class="thumb-button" id="demo-thumb-yes">
+		<svg>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-thumb-up"></use>
+        </svg>
+		<div>Yes</div>
+	</div>
+	<div class="thumb-button" id="demo-thumb-no">
+		<svg>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-thumb-down"></use>
+        </svg>
+		<div>No</div>
+	</div>
+</div>
+
+<script>
+	$(document).ready(function() {
+		$('#demo-thumb-yes:not(.selected)').click(function() {
+			$('#demo-thumb-yes').addClass('selected');
+			$('#demo-thumb-no').removeClass('selected');
+		})
+		$('#demo-thumb-no:not(.selected)').click(function() {
+			$('#demo-thumb-yes').removeClass('selected');
+			$('#demo-thumb-no').addClass('selected');
+		})
+	});
+</script>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;horizontal-answer-buttons&quot;&gt;
+	&lt;div class&#x3D;&quot;thumb-button&quot; id&#x3D;&quot;demo-thumb-yes&quot;&gt;
+		&lt;svg&gt;
+            &lt;use xmlns:xlink&#x3D;&quot;http://www.w3.org/1999/xlink&quot; xlink:href&#x3D;&quot;#svg-thumb-up&quot;&gt;&lt;/use&gt;
+        &lt;/svg&gt;
+		&lt;div&gt;Yes&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;thumb-button&quot; id&#x3D;&quot;demo-thumb-no&quot;&gt;
+		&lt;svg&gt;
+            &lt;use xmlns:xlink&#x3D;&quot;http://www.w3.org/1999/xlink&quot; xlink:href&#x3D;&quot;#svg-thumb-down&quot;&gt;&lt;/use&gt;
+        &lt;/svg&gt;
+		&lt;div&gt;No&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+	$(document).ready(function() {
+		$(&#x27;#demo-thumb-yes:not(.selected)&#x27;).click(function() {
+			$(&#x27;#demo-thumb-yes&#x27;).addClass(&#x27;selected&#x27;);
+			$(&#x27;#demo-thumb-no&#x27;).removeClass(&#x27;selected&#x27;);
+		})
+		$(&#x27;#demo-thumb-no:not(.selected)&#x27;).click(function() {
+			$(&#x27;#demo-thumb-yes&#x27;).removeClass(&#x27;selected&#x27;);
+			$(&#x27;#demo-thumb-no&#x27;).addClass(&#x27;selected&#x27;);
+		})
+	});
+&lt;/script&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="01-buttons.05-letter-buttons">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Letter Buttons</h3>
+				<div class="f-item-controls">
+					
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div>
+<div class="f-item-preview">
+	<div class="horizontal-answer-buttons">
+	<div class="letter-button" id="demo-letter-1">
+		<div>d</div>
+	</div>
+	<div class="letter-button" id="demo-letter-2">
+		<div>j</div>
+	</div>
+</div>
+
+<script>
+	$(document).ready(function() {
+		$('#demo-letter-1:not(.selected)').click(function() {
+			$('#demo-letter-1').addClass('selected');
+			$('#demo-letter-2').removeClass('selected');
+		})
+		$('#demo-letter-2:not(.selected)').click(function() {
+			$('#demo-letter-1').removeClass('selected');
+			$('#demo-letter-2').addClass('selected');
+		})
+	});
+</script>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;horizontal-answer-buttons&quot;&gt;
+	&lt;div class&#x3D;&quot;letter-button&quot; id&#x3D;&quot;demo-letter-1&quot;&gt;
+		&lt;div&gt;d&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;letter-button&quot; id&#x3D;&quot;demo-letter-2&quot;&gt;
+		&lt;div&gt;j&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+	$(document).ready(function() {
+		$(&#x27;#demo-letter-1:not(.selected)&#x27;).click(function() {
+			$(&#x27;#demo-letter-1&#x27;).addClass(&#x27;selected&#x27;);
+			$(&#x27;#demo-letter-2&#x27;).removeClass(&#x27;selected&#x27;);
+		})
+		$(&#x27;#demo-letter-2:not(.selected)&#x27;).click(function() {
+			$(&#x27;#demo-letter-1&#x27;).removeClass(&#x27;selected&#x27;);
+			$(&#x27;#demo-letter-2&#x27;).addClass(&#x27;selected&#x27;);
+		})
+	});
+&lt;/script&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="01-buttons.08-nwf-buttons">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Nwf Buttons</h3>
+				<div class="f-item-controls">
+					
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div>
+<div class="f-item-preview">
+	<div class="vertical-answer-buttons">
+	<div class="nwf-button" id="demo-word-1">
+		<div>bip</div>
+	</div>
+	<div class="nwf-button" id="demo-word-2">
+		<div>fiv</div>
+	</div>
+	<div class="nwf-button" id="demo-word-3">
+		<div>sil</div>
+	</div>
+</div>
+
+<script>
+	$(document).ready(function() {
+		$('#demo-word-1:not(.selected)').click(function() {
+			$('#demo-word-1').addClass('selected');
+			$('#demo-word-2').removeClass('selected');
+			$('#demo-word-3').removeClass('selected');
+		})
+		$('#demo-word-2:not(.selected)').click(function() {
+			$('#demo-word-1').removeClass('selected');
+			$('#demo-word-2').addClass('selected');
+			$('#demo-word-3').removeClass('selected');
+		})
+		$('#demo-word-3:not(.selected)').click(function() {
+			$('#demo-word-1').removeClass('selected');
+			$('#demo-word-2').removeClass('selected');
+			$('#demo-word-3').addClass('selected');
+		})
+	});
+</script>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;vertical-answer-buttons&quot;&gt;
+	&lt;div class&#x3D;&quot;nwf-button&quot; id&#x3D;&quot;demo-word-1&quot;&gt;
+		&lt;div&gt;bip&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;nwf-button&quot; id&#x3D;&quot;demo-word-2&quot;&gt;
+		&lt;div&gt;fiv&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;nwf-button&quot; id&#x3D;&quot;demo-word-3&quot;&gt;
+		&lt;div&gt;sil&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+	$(document).ready(function() {
+		$(&#x27;#demo-word-1:not(.selected)&#x27;).click(function() {
+			$(&#x27;#demo-word-1&#x27;).addClass(&#x27;selected&#x27;);
+			$(&#x27;#demo-word-2&#x27;).removeClass(&#x27;selected&#x27;);
+			$(&#x27;#demo-word-3&#x27;).removeClass(&#x27;selected&#x27;);
+		})
+		$(&#x27;#demo-word-2:not(.selected)&#x27;).click(function() {
+			$(&#x27;#demo-word-1&#x27;).removeClass(&#x27;selected&#x27;);
+			$(&#x27;#demo-word-2&#x27;).addClass(&#x27;selected&#x27;);
+			$(&#x27;#demo-word-3&#x27;).removeClass(&#x27;selected&#x27;);
+		})
+		$(&#x27;#demo-word-3:not(.selected)&#x27;).click(function() {
+			$(&#x27;#demo-word-1&#x27;).removeClass(&#x27;selected&#x27;);
+			$(&#x27;#demo-word-2&#x27;).removeClass(&#x27;selected&#x27;);
+			$(&#x27;#demo-word-3&#x27;).addClass(&#x27;selected&#x27;);
+		})
+	});
+&lt;/script&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="01-buttons.09-ok-button">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Ok Button</h3>
+				<div class="f-item-controls">
+					
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div>
 <div class="f-item-preview">
 	<div class="ok-button">
 	<div>OK</div>
@@ -223,14 +722,174 @@
 &lt;/div&gt;</code></pre>
 </div>
 
+		</div>
 
 </div>
 
 
-<div class="f-item-group" id="sound-button">
+<div class="f-item-group" id="02-stimulus">
+
+	<div class="f-item-heading-group">
+		<h2 class="f-item-heading" data-f-toggle="labels">Stimulus</h2>
+	</div>
+		<div class="f-item-group" id="02-stimulus.01-illustration">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Illustration</h3>
+				<div class="f-item-controls">
+					
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div>
+<div class="f-item-preview">
+	<div class="demo-styles">
+	<div class="illustration">
+		<svg>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-illustration-dog"></use>
+        </svg>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;demo-styles&quot;&gt;
+	&lt;div class&#x3D;&quot;illustration&quot;&gt;
+		&lt;svg&gt;
+            &lt;use xmlns:xlink&#x3D;&quot;http://www.w3.org/1999/xlink&quot; xlink:href&#x3D;&quot;#svg-illustration-dog&quot;&gt;&lt;/use&gt;
+        &lt;/svg&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="02-stimulus.02-nwf-lightning">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Nwf Lightning</h3>
+				<div class="f-item-controls">
+					
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div>
+<div class="f-item-preview">
+	<div class="nwf-lightning">
+	<div class="stimulus">
+		kiv
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;nwf-lightning&quot;&gt;
+	&lt;div class&#x3D;&quot;stimulus&quot;&gt;
+		kiv
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="02-stimulus.03-nwf-letter-sounds">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Nwf Letter Sounds</h3>
+				<div class="f-item-controls">
+					
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div>
+<div class="f-item-preview">
+	<div class="nwf-letter-sounds">
+	<div class="stimulus active">
+		s
+	</div>
+	<div class="stimulus">
+		u
+	</div>
+	<div class="stimulus">
+		t
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;nwf-letter-sounds&quot;&gt;
+	&lt;div class&#x3D;&quot;stimulus active&quot;&gt;
+		s
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;stimulus&quot;&gt;
+		u
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;stimulus&quot;&gt;
+		t
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+		</div>
+		<div class="f-item-group" id="02-stimulus.04-nwf-whole-word">
+			<div class="f-item-heading-group" data-f-toggle="labels">
+				<h3 class="f-item-heading">Nwf Whole Word</h3>
+				<div class="f-item-controls">
+					
+					<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+						<svg>
+							<use xlink:href="#f-icon-code" />
+						</svg>
+					</span>
+				</div>
+			</div>
+<div class="f-item-preview">
+	<div class="nwf-whole-word">
+	<div class="speaker-animation">
+		<svg>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-speaker-01"></use>
+        </svg>
+		<svg>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-speaker-02"></use>
+        </svg>
+		<svg>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-speaker-03"></use>
+        </svg>
+		<svg>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-speaker-04"></use>
+        </svg>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;nwf-whole-word&quot;&gt;
+	&lt;div class&#x3D;&quot;speaker-animation&quot;&gt;
+		&lt;svg&gt;
+            &lt;use xmlns:xlink&#x3D;&quot;http://www.w3.org/1999/xlink&quot; xlink:href&#x3D;&quot;#svg-speaker-01&quot;&gt;&lt;/use&gt;
+        &lt;/svg&gt;
+		&lt;svg&gt;
+            &lt;use xmlns:xlink&#x3D;&quot;http://www.w3.org/1999/xlink&quot; xlink:href&#x3D;&quot;#svg-speaker-02&quot;&gt;&lt;/use&gt;
+        &lt;/svg&gt;
+		&lt;svg&gt;
+            &lt;use xmlns:xlink&#x3D;&quot;http://www.w3.org/1999/xlink&quot; xlink:href&#x3D;&quot;#svg-speaker-03&quot;&gt;&lt;/use&gt;
+        &lt;/svg&gt;
+		&lt;svg&gt;
+            &lt;use xmlns:xlink&#x3D;&quot;http://www.w3.org/1999/xlink&quot; xlink:href&#x3D;&quot;#svg-speaker-04&quot;&gt;&lt;/use&gt;
+        &lt;/svg&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+		</div>
+
+</div>
+
+
+<div class="f-item-group" id="05-header">
 
 	<div class="f-item-heading-group" data-f-toggle="labels">
-		<h2 class="f-item-heading">Sound Button</h2>
+		<h2 class="f-item-heading">Header</h2>
 		<div class="f-item-controls">
 			
 			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
@@ -241,82 +900,28 @@
 		</div>
 	</div>
 <div class="f-item-preview">
-	<div class="sound-button">
-	<div class="sound-button-play svg-shadow">
-		<svg>
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-sound-button-play"></use>
-        </svg>
-		<svg>
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-speaker"></use>
-        </svg>
+	<nav class="lantern-header navbar navbar-static-top">
+	<div class="container">
+		<div class="lantern-brand">
+			mCLASS&#174;
+		</div>
+		<div class="lantern-student">
+			Cortisha Baldwin - Grade 1
+		</div>
 	</div>
-	<div class="sound-button-select svg-shadow">
-		<svg>
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-sound-button-select"></use>
-        </svg>
-		<svg>
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-check"></use>
-        </svg>
-	</div>
-</div>
-<p></p>
-<div class="sound-button selected">
-	<div class="sound-button-play svg-shadow">
-		<svg>
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-sound-button-play"></use>
-        </svg>
-		<svg>
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-speaker"></use>
-        </svg>
-	</div>
-	<div class="sound-button-select svg-shadow">
-		<svg>
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-sound-button-select"></use>
-        </svg>
-		<svg>
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-check"></use>
-        </svg>
-	</div>
-</div>
+</nav>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;div class&#x3D;&quot;sound-button&quot;&gt;
-	&lt;div class&#x3D;&quot;sound-button-play svg-shadow&quot;&gt;
-		&lt;svg&gt;
-            &lt;use xmlns:xlink&#x3D;&quot;http://www.w3.org/1999/xlink&quot; xlink:href&#x3D;&quot;#svg-sound-button-play&quot;&gt;&lt;/use&gt;
-        &lt;/svg&gt;
-		&lt;svg&gt;
-            &lt;use xmlns:xlink&#x3D;&quot;http://www.w3.org/1999/xlink&quot; xlink:href&#x3D;&quot;#svg-speaker&quot;&gt;&lt;/use&gt;
-        &lt;/svg&gt;
+	<pre><code class="language-markup">&lt;nav class&#x3D;&quot;lantern-header navbar navbar-static-top&quot;&gt;
+	&lt;div class&#x3D;&quot;container&quot;&gt;
+		&lt;div class&#x3D;&quot;lantern-brand&quot;&gt;
+			mCLASS&amp;#174;
+		&lt;/div&gt;
+		&lt;div class&#x3D;&quot;lantern-student&quot;&gt;
+			Cortisha Baldwin - Grade 1
+		&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class&#x3D;&quot;sound-button-select svg-shadow&quot;&gt;
-		&lt;svg&gt;
-            &lt;use xmlns:xlink&#x3D;&quot;http://www.w3.org/1999/xlink&quot; xlink:href&#x3D;&quot;#svg-sound-button-select&quot;&gt;&lt;/use&gt;
-        &lt;/svg&gt;
-		&lt;svg&gt;
-            &lt;use xmlns:xlink&#x3D;&quot;http://www.w3.org/1999/xlink&quot; xlink:href&#x3D;&quot;#svg-check&quot;&gt;&lt;/use&gt;
-        &lt;/svg&gt;
-	&lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;/p&gt;
-&lt;div class&#x3D;&quot;sound-button selected&quot;&gt;
-	&lt;div class&#x3D;&quot;sound-button-play svg-shadow&quot;&gt;
-		&lt;svg&gt;
-            &lt;use xmlns:xlink&#x3D;&quot;http://www.w3.org/1999/xlink&quot; xlink:href&#x3D;&quot;#svg-sound-button-play&quot;&gt;&lt;/use&gt;
-        &lt;/svg&gt;
-		&lt;svg&gt;
-            &lt;use xmlns:xlink&#x3D;&quot;http://www.w3.org/1999/xlink&quot; xlink:href&#x3D;&quot;#svg-speaker&quot;&gt;&lt;/use&gt;
-        &lt;/svg&gt;
-	&lt;/div&gt;
-	&lt;div class&#x3D;&quot;sound-button-select svg-shadow&quot;&gt;
-		&lt;svg&gt;
-            &lt;use xmlns:xlink&#x3D;&quot;http://www.w3.org/1999/xlink&quot; xlink:href&#x3D;&quot;#svg-sound-button-select&quot;&gt;&lt;/use&gt;
-        &lt;/svg&gt;
-		&lt;svg&gt;
-            &lt;use xmlns:xlink&#x3D;&quot;http://www.w3.org/1999/xlink&quot; xlink:href&#x3D;&quot;#svg-check&quot;&gt;&lt;/use&gt;
-        &lt;/svg&gt;
-	&lt;/div&gt;
-&lt;/div&gt;</code></pre>
+&lt;/nav&gt;</code></pre>
 </div>
 
 
@@ -335,6 +940,7 @@
 	<!-- inject Lantern SVGs -->
 	<div id='svg-container' style="position:fixed; visibility:hidden"></div>
 	<script src='/assets/toolkit/svg/lantern-sprite.js'></script>
+    <script src='/assets/toolkit/svg/lantern-flm-sprite.js'></script>
 	<!-- /inject Lantern SVGs -->
 
 </body>
